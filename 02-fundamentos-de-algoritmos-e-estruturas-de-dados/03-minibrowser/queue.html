@@ -1,0 +1,55 @@
+<title> Queue Implementation </title>
+
+<script>
+    console.log('[Queue]');
+    // One after another
+    // Order matters
+    // First in, first out
+
+    var queue = [
+        'scripts.js',
+        'style.css',
+        'image.png'
+    ];
+
+    // Add the item to the queue
+    queue.push('second_image.png');
+
+    // Remove first item from the queue
+    queue.shift();
+
+    // =================================
+    // Queue create recipe
+    // =================================
+    // - enqueue
+    // - dequeue
+    class Queue { //Class: Recipe to create objects
+        constructor() {
+            this.data = [];
+        }
+        enqueue(item) {
+            this.data.push(item);
+        }
+
+        dequeue() {
+            return this.data.shift();
+        }
+
+        print() {
+            console.log(this.data);
+        }
+    }
+
+    // Code Design First
+    var requests = new Queue();
+    // Open Closed
+    // Open: Open to extension.
+    // Closed: Close to modify.
+    requests.enqueue('scripts.js');
+    requests.enqueue('style.css');
+    requests.enqueue('image.png');
+    requests.enqueue('second_image.png');
+    requests.print();
+
+    console.log(requests.dequeue());
+</script>

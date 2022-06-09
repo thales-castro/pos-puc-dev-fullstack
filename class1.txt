@@ -1,0 +1,179 @@
+Parte 3:
+Desenvolvimento de solução tecnológica como modelo de trabalho de conclusão de curso
+
+Desenvolvimento de protótipo do sistema
+
+Template
+- Contextualização da proposta
+    - Introdução do tipo de problema/oportunidade encontrada como motivação para o desenvolvimento da 
+    solução de um aplicativo web.
+    - Descrever como pretende desenvolver a aplicação
+    - QUal o objetivo alvo que o trabalho visa concluir?
+        Tanto objetivo estratégico, aquilo que se deseja alcançar durante o desenvolvimento da atividade
+        Quanto objetivo específico, que detalha como cada objetivo estratégico pode ser alcançado
+        Ex.: Objetivo estratégico - Desenvolvimento de uma aplicação que permita a integração de doadores
+        de sangue com pessoas que necessitam de doação
+        Objetivo específico - Desenvolvimento de uma aplicação com banco de dados que permita o cadastro de doadores
+        de sangue e pessoas que necessitam de doação
+        - Terá um banco de dados que irá armazenar os cadastros
+        - No backend terá uma api que consome, processa e salva os dados
+
+    - Estudo das jornadas do usuário: quais caminhos, no software, o usuário precisara percorrer para utilizar
+    o aplicativo: autenticação, com ou sem rede social, cadastro do tipo sanguínio, dados, posto de doação, nome da pessoas
+    que irá receber a doação. (Essa descrição possibilitará o levantamento de requisitos.)
+    - Pensar nas situações de todos os tipos de usuários e as jornadas que cada um possui para sua operação no sistema, tanto doadores
+    quanto receptores.
+    - Listar as solicitações de sangue.
+    - Menus de navegação
+    - Independente da tecnologia a ser explorada, uma solução precisa ser entendida do seu uso.
+    Gameficiação: Aplicação de mecânicas oriundas do design de jogos em contextos normalmente não relacionado a jogos.
+
+    - Apelo mercadológico da solução.
+
+    Entendi o problema, observei as soluções possíveis, avaliei o que eu poderia utilizar e agora estou propondo a solução.
+
+    - Ciclo de desenvolvimento da solução.
+
+    "O resultado do meu trabalho não necessariamente precisa ser um sistema comercial finalizado, mas que mostre os elementos essenciais
+    de tudo o que aprendi durante o curso."
+
+    "Demonstrar aquilo que deu certo e o que deu errado e dizer o porque é um resultado que o avaliador espera do trabalho."
+
+    - Mockup da proposta de solução.
+        Mockup: modelo de um projeto utilizado na apresentação de uma ideia, na demonstração e avaliação do design.
+    
+    - Arquitetura da solução
+        - Que tipo de servidores?
+        - Que tipo de DB?
+        - Como comunica com o DB?
+        - Como quebrou a solução em serviços?
+        - QUem saõ as APIs de serviços e como são expostas?
+        - Do cliente web, como é tratado?
+        - Quais frameworks utilizados no FE?
+        - Quais protocolos foram utilizados?
+        - É consumido algo oferecido por alguma infra aws, azure, google? (Reconhecimento de imagens da microsoft por exemplo)
+
+        Utilizar mecanismos, diagramas, imagens ilustrando a solução.
+
+    Entendi o problema e consigo demonstrar como deve ser feita a solução.
+    |-> "É este tipo de feeling que o avaliador vai procurar no trabalho: se conseguiu conectar as peças com o ferramental que foi apresentado durante o curso
+
+    22:29 -> Tempo que parei.                                                                                                               
+
+    Validação da solução
+    - Pode ser utilizado testes de software para validar a solução (lado extremamente técnico - ligado à DevOps)
+    - "Utilizei tal estratégia, framework foi implementado automatizado utilizando tais ferramentas, aponta o repositório"
+    - Do lado de usuário é possível chegar aos amigos e através de um formulário fazer perguntas a respeito do funcionamento do Software, levantar as sugestões
+    - Mostrar que buscou os aspectos de negócios
+    - Formulario do Google Forms e apresentar os resultados no trabalho
+
+    Registro das evidencias do projeto:
+    - Repositório contendo os artefatos de software desenvolvidos.
+    - No documento textual aponta onde estão os testes, o código fonte do back e front-end, tal diretório o banco de dados, outro diretório está o resultado das conversas
+    com os usuários.
+
+    Considerações finais e expectativas
+    - Eu atingi o objetivo principal?
+    - O quanto eu atingi?
+    - O quanto não atingi?
+    - O que eu aprendi?
+    - Quais são as expectativas para o futuro?
+
+    Avaliação:
+    - Qualidade do texto apresentado
+    - Coerencia técnica
+    - Contextualização mercadológica
+
+    O trabalho será composto por:
+    - documento
+    - material técnico armazenado em 
+
+Dicas Gerais:
+- Cuide a linguagem utilizada no texto:
+    - Formal, precisa, sem erros de ortografia
+    - Não utilize expressões coloquiais ou gírias
+    - Frases curtas e diretas reduzem a chance de erros
+    Simples, direto e objetivo
+
+    Aproveitar os momentos de orientação.
+    Será possível interagir com o orientador online, validar ideias, resolver dúvidas com respeito ao template do trabalho
+
+
+    - Cause uma boa impressão provendo um texto bem organizado e bem escrito.
+
+    - Organize a forma de apresentação dos conteúdos do seu texto de forma que esssa sequência fique coerente e facilite o entendimento
+    do leitor.
+
+    Faça o uso adequado de elementos visuais
+    - Incluir imagens, esquemas, fluxos, tabelas, quadros, etc
+    - Esses elementos mais gráficos e visuais facilitam o entendimento
+    - Toda imagem/tabela/quadro em seu texto deve estar legendada e numerada
+
+    Prime pelo rigor técnico e pela qualidade das referências usadas para embasar o texto:
+    - Apresentar as referências de forma completa e organizada
+    - Siga atentamente as normas da ABNT
+    - https://biblioteca.pucrs.br
+      - Seção Apoio à Pesquisa.
+
+Dicas Gerais:
+- Mantenha um repositório de artefatos e os referêncie not exto do trabalho.
+    Por exemplo o GitHub (https://github.com)
+- Para a prototipação de sistemas, seja em atividades das disciplinas, seja no protótipo desenvolvido para demonstração do curo.
+Forneça acesso o protótipo executável implantado na nuvem:
+    - Heroku
+    - Netlify
+    - Vercel
+
+
+
+Parte 4:
+
+Typescript: Linguagem de programação de código aberto que pode ser usada para desenvolver 
+aplicações JS tanto client-side quanto server-side.
+
+NodeJS: Software multiplataforma de código aberto que permite a execução de códigos JS fora
+de um navegador web.
+O principal diferencial do Nove.js é a execução das requisições em single-thread, quando
+uma única thread é responsável por executar o código JavaScript.
+
+MongoDB: Software multiplataforma de banco de dados de código aberto. Permite que as aplicações
+modelem informações de forma bastante natural, pois os dados podem ser aninhados em hierarquias
+complexas e seguem indexáveis e fáceis de buscar.
+
+REST: Estilo de arquitetura de software que define um conjunto de regras a sere utilizadas na 
+criação de serviços web.
+
+Express.js: Framework para Node.js que fornece recursos mínimos para construção de servidores web.
+
+ReactJS: Biblioteca JS de código abert com foco na criação de interfáces de usuário em páginas
+web.
+
+"Toda vez que eu enviar o repositório de código com uma nova versão do site o sistema da vercel vai
+colocar no ar a nova versão. Isso faz parte da DevOps."
+
+Vercel: Oferta que permite hospedar servidores e aplicações na nuvem.
+
+Banco de Dados Relacional: Modela os dadoes de forma que sejam percebidos pelos usuários em forma de tabelas.
+
+PostgreSQL: Sistema gerenciador de banco de dados relacionais.
+
+Heroku: Oferta que permite hospedar servidores e aplicações na nuvem.
+
+Angular: Plataforma de aplicações web de código aberto. Utiliza HTML e TypeScript a fim de desenvolver a 
+interface com o usuário, ou seja, o front-end de aplicações web.
+
+Gitlab: 
+
+MEAN Stack: Conjunto de soluções JS de código aberto utilizado na construção de páginas web dinâmicas e de
+aplicações web. Uso do MongoDB, Express.js, Angular.js e Node.js
+
+MERN Stack: Variação da MEAN Stack utilizando MOngo, Express, React e Node
+
+LAMP Stack: Conjunto de Sw de código averto que podem ser utilizados na criação de sites e de aplicações web.
+São utilizados: Linux, Apache, MySQL e PHP.
+
+Desenvolvedor fullstack deve ser capaz de trabalhar desde o DB até a ponta do usuário.
+Deve ser capaz de automatizar utilizando DevOps.
+Deve ser capaz de realizar testes.
+Deve ter uma ampla visualização.
+Pode escolher uma das tecnologias da Stack.

@@ -1,0 +1,67 @@
+Aula 01 - Mario Souto
+
+------------------------------------------------------------ PARTE 1 ------------------------------------------------------------
+
+Faang -> 5 empresas que mais pagam bem no mundo
+    - Facebook/Meta
+    - Amazon
+    - Apple
+    - Netflix
+    - Google
+
+*Boa parte da renda da Amazon vem de empresas que utilizam da infraestrutura da mesma (como servidores AWS).
+ 
+SERVIDOR EM NUVEM -> Grupo de máquinas físicas que trabalhando juntas, como uma só, permitem um serviço ficar de pé. 
+Caso ocorra algum problema com uma das máquinas, a outra a substituirá, impedindo que o serviço fique fora do ar.
+
+LATÊNCIA -> Unidade de medida de velocidade da internet. Medida entre o início de um evente, até seus efeitos se tornarem
+perceptíveis.
+
+FRONTEND -> Desenvolvimento da interface gráfica do usuário de um site, por meio de uso de HTML, CSS, Javascript,
+para que os usuários possam interpretar e interagir com os dados.
+
+BACKEND -> Estrutura que possibilita a operação do sistema, criação do código e manutenção de um site ou sistema, incluindo
+banco de dados, servidores e aplicativos.
+
+ESCALAR -> É fazer um sistema que suporta uma quantidade de carga passar a suportar mais carga.
+Solução que funciona num cenário pequeno, começar a funcionar em um cenário grande.
+
+ESCALAR VERTICALMENTE -> É aumentar a capacidade do servidor atual (custa mais caro)
+
+ESCALAR HORIZONTALMENTE -> É replicar o servidor atual em x vezes (custa mais tempo)
+
+Server side rendered -> Técnica usada no desenvolvimento web que produz uma resposta personalizada para a solicitação
+de cada usuário (cliente) ao site. A alternativa é o próprio servidor web, entregar uma página web estática.
+
+CACHE -> Tem o objetivo de evitar o acesso ao dispositivo de armazenamento, armazenando os dados em meios de acesso
+mais rápidos. Seu uso visa obter uma velocidade de acesso à memória próxima de memórias mais rápidas, e ao mesmo tempo
+disponibilizarno istema uma memória de grande capacidade.
+
+TRADE-OFF -> Define uma situação em que há conflito de escolha, se caracteriza em uma ação econômica que visa à resolução
+de problema mas acarreta outro, obrigando uma escolha.
+
+------------------------------------------------------------ PARTE 3 ------------------------------------------------------------
+07/06/2022
+
+Aula 02 - Mario Souto
+
+SISTEMA -> É uma forma de organizar.
+
+Estruturas mais específicas do JS: Map e Set
+
+MDN -> informações sobre tecnologias Open Web: HTML CSS e APIs para sites e aplicativos da web progressivos.
+
+Quokka -> Extensão do VSCode que printa as saídas do JS como no Browser.
+
+TDD -> Test Driven Development.
+Escrever um código que falhe.
+Fazer o código funcionar.
+Refatorar.
+
+Ex.: Código da pilha que foi dando erro e conforme os testes o código foi refatorado até funcionar.
+
+Map -> Estrutura de dados lista que contem uma chave e um valor.
+Baseado no ID sempre sobrescreve o último.
+
+Set -> Estrutura de dados que é uma lista de itens únicos. Por exemplo, evita que eu adicione dois itens exatamente
+iguais ao meu set.
