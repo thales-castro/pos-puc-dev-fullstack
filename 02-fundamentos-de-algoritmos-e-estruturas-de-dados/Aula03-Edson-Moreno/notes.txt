@@ -1,0 +1,173 @@
+Aula 03 - 13/06/2022
+
+Qual é o problema? Qual a forma de condução da solução?
+
+Node.js
+
+Software de código aberto, multiplataforma, baseado no interpretador V8 do Google, que permite a
+execução de códigos JavaScript fora de um navegador web.
+
+Verificar, no material de aula, a configuração do ambiente.
+
+- JavaScript -> 
+ - Linguagem baseada em objetos;
+ - Dinâmica;
+ - Fracamente tipada;
+ - Usualmente interpretada por navegadores.
+
+ Organização:
+
+ Declaração de variáveis/constantes:
+  - const -> Define uma variável IMUTAVEL dentro de um contexto.
+  - let -> Define uma variável, mutável, dentro de um escopo local.
+  - var -> Define uma variável, mutável, dentro de um escopo global.
+
+
+Complexidade algoritmica:
+ Caracteristicas de desempenho a serem avaliadas:
+  - O espaço ocupado.
+  - Tempo de execução.
+
+ É medida a partir do consumo de recursos:
+  - Tempo de processamento.
+  - Memória ocupada.
+  - Largura de banda de comunicação.
+  - Hardware necessário.
+
+
+Mais do que saber o tempo, é importante mensurar qual seria o melhor caso, ou caso médio para execução do código.
+
+Dar uma lida nas BIG O notations.
+
+- Lista encadeada.
+  Proposta de organização de estrutura na qual os dados são acessados através de referências.
+  Determinado de número de nodos (nós), cada um com um ponteiro para o próximo e/ou para o anterior.
+  Existe uma estrutura de armazenamento e também existe uma referência para a próxima estrutura desse conjunto.
+
+  Existe uma noção de caminho, ou seja, como se começa e como se chega ao fim dessa estrutura
+
+  Existem listas encadeadas:
+    Encadeamento simples: Simplesmente possui a referência para o próximo elemento até que se chegue ao final.
+    Encadeamento duple: possui referência para o próximo elemento e para o elemento anterior.
+
+  // TODO: Reler sobre os grafos.
+
+  Os nodos/nós são conectados/encadeados por links, dentro dos prórpios nodos.
+  Geralmente possuem dois atributos:
+    Element: Elemento armazenado no nodo.
+    Next: Representa o próximo nodo no encadeamento da lista (Contem referência para um objeto de mesma classe);
+  
+  // TODO: Ler sobre todos estes dados no C++
+
+  Header: Primeiro elemento. Acesso direto ao primeiro elemento (header) é obrigatório.
+  Tail: Ultimo elemento. Acesso direto ao último elemento (tail) é desejável.
+
+  O uso somente da referência header é ineficiente para inserir elementos ao final da lista.
+----------------------------------------------------------------------------------------------------------------------
+- Árvores:
+  - Estruturas de dados não lineares.
+
+  - Permitem a implementação de vários algoritmos mais rápidos do que de estruturas de dados lineares como listas.
+
+  - Fornecem uma forma natural de organizar os dados:
+    - Sistemas de arquivos.
+    - Bancos de dados.
+    - Sites da web.
+
+  - Conceitos e terminologia:
+    - Tipo abstrato de dados que armazena elementos de maneira hierárquica.
+    - Normalmente são desenhadas com seus elementos dentro de elipses.
+
+                                      A
+                                  B     C
+                                D   E     F
+
+    - Outra propriedade de uma árvore T:
+      - Cada nodo v de T, diferente da raiz tem um único elemento pai, W
+      - Todo nodo com pai W, é filho de W
+
+    - Uma árvore pode ser vazia.
+    - Esta convenção permite que se defina uma árvore recursivamente.
+    - Uma árvore T ou está vazia, ou consiste de um nodo r, chamado de Raiz de T e um conjunto de árvores cujas raízes
+    são filhas de r. Ou não tem nodo nenhum ou 1 nodo tem seus filhos e cada filho tem seu pai e seus filhos
+
+    - 02 nodos filhos de um mesmo pai, são chamados de irmãos.
+    - Um nodo v é externo se V não tem filhos.
+    - Um nodo V é interno se tem um ou mais filhos.
+
+    - Nodo interno também é conhecido como galho.
+    - Nodo externo é conhecido como folha.
+----------------------------------------------------------------------------------------------------------------------
+- Recursão:
+  - Método para resolução de problemas.
+  - Consistem em solucionar partes menores do mesmo problema.
+  - Finaliza quando o problema original for resolvido.
+
+  - Recursão é alcançada chamando-se a própria função.
+
+  - Uma função será recursiva se puder chamar a si mesmo diretamente.
+
+  - A raiz de uma árvore é chamada de pai de suas sub-árvores.
+  - As raízes das sub-árvores de um nodo são chamadas de irmãos que, pro sua vez, são filhos de seu nodo pai.
+
+  - Grau de uma árvore:
+    - Número de sub-árvores de um nodo. (Número de filhos de um nó)
+    - Quando o grau é zero, o nodo não possui filhos, ele é uma folha.
+
+  - Nível de um nodo:
+    - É o número de linhas que liga o nodo à raiz, sabendo que a raíz é o nível zero.
+
+  - Altura:
+    - É o nível mais alto da árvore.
+
+  - Métodos esperados de uma árvore:
+    - root(): retorna a raiz da árvore.
+    - parent(v): pai do nodo.
+    - children(v): filho do nodo.
+
+    - Métodos de consulta:
+      - isInternal(v): testa se o nodo é interno retorna true/false.
+      - isExternal(v): testa se um nodo v é externo e retorna true/false.
+      isRoot(v): testa se um nodo é raíz e retorna true/false.
+
+    - Métodos genéricos:
+      - size(): returna o núemro de nodos na árvore.
+      - isEmpty(): testa se a árvore está vazia.
+      - positions(): retorna uma coleção com todos os nodos da árvore
+      - replaceElement(v, e): retorna o elemento armazenado e realiza a troca de v por e.
+
+  - Uma árvore binária é uma arvore ordenada com as seguintes propriedades:
+    - Todos os nodos tem no máximo dois filhos.
+    - Cada nodo filho é rotulado como sendo um filho da esquerda ou um filho da direita.
+    - O filho da esquerda precede o filho da direita na ordenação dos filhos de um nodo.
+
+    - Subárvores:
+      - O filho da esquerda de um nodo interno v é chamado de subarvore da esquerda
+      - O meso é pra direita.
+
+    - Arvore binária própria (ou cheia):
+      - Cada nodo tem 0 ou 2 filhos.
+
+    - Formas diferentes de caminhamento:
+      - Caminhamento em profundidade?
+        * Percurso pré-fixado
+          O nodo é visitado antes dos seus descendentes.
+          Visita Raiz.
+          Percorre subarvore da direita.
+          Percorre subarvore da esquerda.
+
+        * Percurso pós-fixado
+          O nodo é visitado depois dos seus descendentes.
+          Percorre subarvore da esquerda.
+          Percorre subarvore da direita.
+          Visita raiz.
+
+        * Percurso central
+          Percorre subarvore da esquerda.
+          Visita Raiz.
+          Percorre subarvore da direita.
+  ----------------------------------------------------------------------------------------------------------------------
+
+
+    
+    
