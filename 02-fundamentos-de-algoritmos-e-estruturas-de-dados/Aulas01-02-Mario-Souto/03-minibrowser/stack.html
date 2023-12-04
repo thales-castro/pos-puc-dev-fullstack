@@ -1,0 +1,38 @@
+<script>
+    console.log('[Stack]')
+
+    // LIFO - Stack
+    class BrowserHistoryStack {
+        constructor() {
+            this.cursor = 0;
+            this.data = [];
+        }
+
+        push(item) {
+            this.data.push(item);
+            this.cursor++;
+        }
+
+        back() { // Pop represented by browser cenary.
+            this.cursor--;
+            // return this.data.pop();
+        }
+
+        clear() {
+            this.data = [];
+        }
+
+        print() {
+            console.log(`Cursor position: ${this.cursor}`);
+            console.log(`Actual data: ${this.data}`);
+        }
+
+    }
+
+    const history = new BrowserHistoryStack();
+    history.push('https://google.com');
+    history.push('https://youtube.com');
+    history.print('');
+    history.back();
+    history.print();
+</script>

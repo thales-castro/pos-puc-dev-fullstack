@@ -1,0 +1,58 @@
+<!-- <main>
+    <header>
+        <div class="close-area"></div>
+        <input placeholder="https://..." value="https://mariosouto.com" />
+    </header>
+    <iframe src="https://mariosouto.com"></iframe>
+</main> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Corrige os caracteres. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mini Experimental Browser </title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    // [INPUT]
+    // Objects: Represent data structures with multiple attributes.
+    var tab1 = {
+        title: 'Run App',
+        url: 'C:/dev/pos-pucrs/Módulo 2 - Fundamentos de Computação e Algoritmos/02-calcula-app-de-corrida.html'
+    };
+
+    var tab2 = {
+        title: 'G1',
+        url: 'https://g1.globo.com/'
+    };
+
+    // Arrays: Lists of data structures.
+    const tabs = [
+        tab1,
+        tab2
+    ];
+
+    // [PROCESSING]
+    for (tab of tabs) {
+        console.log(tab.title);
+
+        // [OUTPUT]
+        var currentHTMLValue = document.body.innerHTML;
+        document.body.innerHTML = currentHTMLValue + `<li><a href="${tab.url}"> ${tab.title}</a></li>`;
+    }
+    // O que tem na aba do navegador?
+    // titulo
+    // url
+    // pagina de fato (HTML, CSS, JS)
+</script>
+<!-- <link rel="stylesheet" href="./style.css" /> -->
+
+</html>
